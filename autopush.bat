@@ -1,6 +1,6 @@
 @echo off
 :loop
-git pull origin master
+git pull origin master --rebase
 git add .
 git commit -m "Auto-update: %date% %time%"
 git push origin master
