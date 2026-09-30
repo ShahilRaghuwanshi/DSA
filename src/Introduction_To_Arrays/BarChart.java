@@ -15,7 +15,7 @@ public static void main(String[] args) {
 			System.out.print("*\n");
 			arr[i]=arr[i]-1;
 		}
-		System.out.print(" ");
+		
 	}
 }
 }
