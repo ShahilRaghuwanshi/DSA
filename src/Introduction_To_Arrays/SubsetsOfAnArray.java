@@ -26,7 +26,6 @@ public class SubsetsOfAnArray {
 				}
 			}
 			System.out.println(set);
-			///yo yo yoy yoy oyy yoy yyyooyoyoyoyoyo
 		}
 	}
 }
