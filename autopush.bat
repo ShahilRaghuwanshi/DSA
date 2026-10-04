@@ -3,8 +3,8 @@
 git pull origin master --rebase
 git add .
 
-:: PowerShell se Date (04-Oct-2026), Time aur AM/PM fetch karna
-for /f "tokens=*" %%a in ('powershell -Command "Get-Date -Format 'dd-MMM-yyyy hh:mm:ss tt'"') do set datetime=%%a
+:: Time pehle aur Date baad me (09:25:23 AM | 04-Oct-2026)
+for /f "tokens=*" %%a in ('powershell -Command "Get-Date -Format 'hh:mm:ss tt | dd-MMM-yyyy'"') do set datetime=%%a
 
 git commit -m "%datetime%"
 git push origin master
