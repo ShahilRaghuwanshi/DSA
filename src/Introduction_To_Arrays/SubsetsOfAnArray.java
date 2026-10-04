@@ -11,13 +11,13 @@ public class SubsetsOfAnArray {
 			arr[i] = sc.nextInt();
 		}
 		int  p = 2 ^ n;
-		for(int i = 0; i < p; i++) {
-			for(int  j = 0; j < n; j++) {
-				for(int k = 0; k < n; k++) {
-					System.out.print(i+ " "+ j+" "+k);
-				}
-				System.out.println();
+		for(int i = 0; i < n - 1; i++) {
+			for(int  j = 0; j < n - 1; j++) {
+				for(int k = 0; k < n - 1; k++) {
+					System.out.println(arr[i]+ " "+ arr[j]+" "+arr[k]);
+				}	
 			}
 		}
+		
 	}
 }
