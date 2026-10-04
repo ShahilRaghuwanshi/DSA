@@ -6,5 +6,4 @@
 - 📂 **Loops**
 - 📂 **Pattern**
 - 📂 **gettingstarted**
-- 📂 **introductionToArrays
-- **
+- 📂 **introductionToArrays**
