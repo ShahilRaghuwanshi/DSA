@@ -10,20 +10,22 @@ public class SubsetsOfAnArray {
 		for(int i = 0; i < n; i++) {
 			arr[i] = sc.nextInt();
 		}
-		int  p = 2 ^ n;
-		for(int i = 0; i < n - 1; i++) {
-			for(int  j = 0; j < n - 1; j++) {
-				for(int k = 0; k < n - 1; k++) {
-					if(i == 0) System.out.print(" ");
-					else System.out.println(arr[i]);
-					if(j == 0) System.out.print(" ");
-					else System.out.println(arr[j]);
-					if(k == 0) System.out.print(" ");
-					else System.out.println(arr[k]);
-				}
-				System.out.println();
-			}
-		}
 		
+		int  limit = (int)Math.pow(2, n); 
+		for(int i = 0; i < limit; i++) {
+			String set = "";
+			int temp = i;
+			for(int j = arr.length-1; j >= 0; j--) {
+				int r = i % 2;
+				temp = temp / 2;
+				
+				if(r == 0) {
+					set  = set + "_\t";
+				}else {
+					set = arr[j] + set;
+				}
+			}
+			System.out.println(set);
+		}
 	}
 }
