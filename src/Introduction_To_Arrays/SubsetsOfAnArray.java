@@ -16,7 +16,7 @@ public class SubsetsOfAnArray {
 			String set = "";
 			int temp = i;
 			for(int j = arr.length - 1; j >= 0; j--) {
-				int r = i % 2;
+				int r = temp % 2;
 				temp = temp / 2;
 				
 				if(r == 0) {
