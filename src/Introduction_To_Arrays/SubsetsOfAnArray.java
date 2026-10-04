@@ -10,10 +10,10 @@ public class SubsetsOfAnArray {
 		for(int i = 0; i < n; i++) {
 			arr[i] = sc.nextInt();
 		}
-		
-		for(int i = 0; i < n; i++) {
+		int  p = 2 ^ n;
+		for(int i = 0; i < p; i++) {
 			for(int  j = 0; j < n; j++) {
-				for(int k = 0; k < j; k++) {
+				for(int k = 0; k < n; k++) {
 					System.out.print(i+ " "+ j+" "+k);
 				}
 				System.out.println();
