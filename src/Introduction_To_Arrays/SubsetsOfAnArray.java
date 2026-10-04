@@ -25,7 +25,8 @@ public class SubsetsOfAnArray {
 					set = arr[j] + "\t" + set;
 				}
 			}
-			System.out.println(set);king
+			System.out.println(set);
+			///yo yo
 		}
 	}
 }
