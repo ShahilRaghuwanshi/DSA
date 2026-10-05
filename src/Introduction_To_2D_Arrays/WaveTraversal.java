@@ -22,7 +22,8 @@ public class WaveTraversal {
 					for(int k = 0; k < r; k++) {
 					System.out.println(arr[k][j]);
 					}
-				}else {
+				}
+				else {
 					for(int k = r - 1; k >= 0; k--) {
 						System.out.println(arr[k][j]);
 						}
