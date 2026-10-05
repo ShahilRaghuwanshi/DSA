@@ -22,11 +22,29 @@ public class MatrixMultiplication {
 			}
 		}
 		
+		if (n2 != n3) {
+			System.out.println("Invalid input");
+			return;
+		}
+		
 		int[][] arr3 = new int[n1][n4];
+		int no = 0;
 		for(int i = 0;i < arr3.length; i++) {
-			for(int j = 0; j < arr3[i].length; j++) {
-			
+			for(int j = 0; j < arr3[0].length; j++) {
+				for(int k = 0; k < n2; k++) {
+		            arr3[i][j] += arr1[i][k] * arr2[k][j];
+		        }
 			}
 		}
+		
+		
+		
+		for(int i = 0;i < arr3.length; i++) {
+			for(int j = 0; j < arr3[i].length; j++) {
+			System.out.print(arr3[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
 	}
 }
