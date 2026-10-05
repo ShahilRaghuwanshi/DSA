@@ -16,15 +16,17 @@ public class WaveTraversal {
 			}
 		}
 		
-		for(int i = 0; i < r; i++) {
+		
 			for(int j = 0; j < c; j++) {
-				for(int k = 0; k < r; k++) {
-					System.out.print(arr[k][j]);
+				if(j % 2 == 0) {
+					for(int k = 0; k < r; k++) {
+					System.out.println(arr[k][j]);
+					}
+				}else {
+					for(int k = r - 1; k >= 0; k--) {
+						System.out.println(arr[k][j]);
+						}
 				}
-				for(int k = r - 1; k >= 0; k--) {
-					System.out.print(arr[k][j]);
-				}
-			}
 		}
 	}
 }
