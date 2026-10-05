@@ -2,7 +2,7 @@ package Introduction_To_2D_Arrays;
 
 import java.util.Scanner;
 
-public class IntoductionQuestion {
+public class ArrayDemo2D {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n1 = sc.nextInt();
