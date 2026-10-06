@@ -7,3 +7,4 @@
 - 📂 **Pattern**
 - 📂 **gettingstarted**
 - 📂 **introductionToArrays**
+- 📂 **introductionTo2DArrays**
