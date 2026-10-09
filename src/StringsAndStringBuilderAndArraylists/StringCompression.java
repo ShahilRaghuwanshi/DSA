@@ -15,5 +15,21 @@ public class StringCompression {
 			}
 		}
 		System.out.println(sb);
+		
+		StringBuilder sb1 = new StringBuilder();
+		char ch1 = s.charAt(0);
+		sb.append(ch);
+		int cnt = 1;
+		for(int i = 1; i < s.length(); i++) {
+			if(ch != s.charAt(i)) {
+				sb1.append(s.charAt(i));
+				sb1.append(cnt);
+				ch = s.charAt(i);
+				cnt = 1;
+			}else {
+				cnt++;
+			}
+		}
+		System.out.println(sb1);
 	}
 }
