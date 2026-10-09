@@ -23,8 +23,7 @@ public class StringCompression {
 		int cnt = 1;
 		for(int i = 1; i < s1.length(); i++) {
 			if(ch1 != s.charAt(i)) {
-				
-				sb1.append(cnt);
+				if(cnt > 1) sb1.append(cnt);
 				sb1.append(s1.charAt(i));
 				ch1 = s.charAt(i);
 				cnt = 1;
