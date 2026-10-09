@@ -39,5 +39,14 @@ public class Main {
 		 * //set char
 		 * //s1.charAt(0) = 's'; 					//Won't work
 		 */		
+		
+		//substring()
+		String s = "abcd";
+		System.out.println(s.substring(1, 3));		//bc
+		System.out.println(s.substring(0, 1));		//a	
+		System.out.println(s.substring(0, 2));		//ab
+		System.out.println(s.substring(1, 1));		//
+		System.out.println(s.substring(3, 2));		//Exception
+		
 	}
 }
