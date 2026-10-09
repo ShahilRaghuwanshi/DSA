@@ -3,11 +3,11 @@ import java.util.*;
 
 public class StringCompression {
 	
-		public static String comparision1(String str) {
+		public static String compression1(String str) {
 			
 			String s = str.charAt(0) + "";
 			
-			for(int i = 0; i < str.length(); i++) {
+			for(int i = 1; i < str.length(); i++) {
 				char curr = str.charAt(i);
 				char prev = str.charAt(i - 1);
 				
@@ -18,11 +18,11 @@ public class StringCompression {
 			return s;
 	}
 		
-		public static String comparision2(String str) {
+		public static String compression2(String str) {
 			
 				String s = str.charAt(0) + "";
 				int cnt = 1;
-				for(int i = 0; i < str.length(); i++) {
+				for(int i = 1; i < str.length(); i++) {
 					char curr = str.charAt(i);
 					char prev = str.charAt(i - 1);
 				
@@ -42,5 +42,13 @@ public class StringCompression {
 				}
 				
 				return s;
+		}
+		
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			String str = sc.next();
+			System.out.println(compression1(str));
+			System.out.println(compression2(str));
+
 		}
 }
