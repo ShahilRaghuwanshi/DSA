@@ -16,15 +16,17 @@ public class StringCompression {
 		}
 		System.out.println(sb);
 		
+		String s1 = "aaabbcccddaeef";
 		StringBuilder sb1 = new StringBuilder();
-		char ch1 = s.charAt(0);
-		sb.append(ch);
+		char ch1 = s1.charAt(0);
+		sb1.append(ch1);
 		int cnt = 1;
-		for(int i = 1; i < s.length(); i++) {
-			if(ch != s.charAt(i)) {
-				sb1.append(s.charAt(i));
+		for(int i = 1; i < s1.length(); i++) {
+			if(ch1 != s.charAt(i)) {
+				
 				sb1.append(cnt);
-				ch = s.charAt(i);
+				sb1.append(s1.charAt(i));
+				ch1 = s.charAt(i);
 				cnt = 1;
 			}else {
 				cnt++;
