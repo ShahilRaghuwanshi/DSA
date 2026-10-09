@@ -40,7 +40,7 @@ public class Main {
 		 * //s1.charAt(0) = 's'; 					//Won't work
 		 */		
 		
-		//substring()
+	/*	//substring()
 		String s = "abcd";
 		System.out.println(s.substring(1, 3));		//bc
 		System.out.println(s.substring(0, 1));		//a	
@@ -48,5 +48,13 @@ public class Main {
 		System.out.println(s.substring(1, 1));		//
 		System.out.println(s.substring(3, 2));		//Exception
 		
+	*/
+		//sari sustrings print krni hai 
+		String s = "abcd";
+		for(int i = 0; i < s.length(); i++) {
+			for(int j = i + 1; j <= s.length(); j++) {
+				System.out.println(s.substring(i, j));
+			}
+		}
 	}
 }
