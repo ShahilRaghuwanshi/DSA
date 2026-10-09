@@ -16,9 +16,15 @@ public class Main {
 		System.out.println(s2);
 		*/
 		
+		/*
 		String s1 = sc.nextLine();
 		String s2 = sc.next();
 		System.out.println(s1);
-		System.out.println(s2);
+		System.out.println(s2);				//not in eclipse but this will give an error in normal console 
+		*/
+		
+		//length()
+		String s1 = sc.nextLine();
+		System.out.println(s1.length());
 	}
 }
