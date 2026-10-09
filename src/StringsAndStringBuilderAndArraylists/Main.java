@@ -66,5 +66,13 @@ public class Main {
 		String s2 = "world";
 		String s3 = s1 + " " + s2;
 		System.out.println(s3);
+		
+		//char kaise add kre
+		s1 += ' ';
+		s1 += 'w';
+		s1 += 'b';
+		s1 += 10;
+		System.out.println(s1);
+		System.out.println("hello" + 10 + 20); 				//hello1020(because left to right)
 	}
 }
