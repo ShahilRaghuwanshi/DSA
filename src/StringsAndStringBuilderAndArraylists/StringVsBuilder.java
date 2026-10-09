@@ -11,7 +11,7 @@ public class StringVsBuilder {
 		}
 		long end = System.currentTimeMillis();
 		long duration = end - start;
-		System.out.println(duration);				//256
+		System.out.println(duration);				//194
 		
 		//using StringBuilder
 		StringBuilder sb = new StringBuilder();
@@ -21,6 +21,6 @@ public class StringVsBuilder {
 		}
 		long end1 = System.currentTimeMillis();
 		long duration1 = end1 - start1;
-		System.out.println(duration1);
+		System.out.println(duration1);				//3
 	}
 }
