@@ -2,7 +2,7 @@ package StringsAndStringBuilderAndArraylists;
 
 import java.util.Scanner;
 
-public class Main {
+public class Introduction {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -74,5 +74,14 @@ public class Main {
 		s1 += 10;
 		System.out.println(s1);
 		System.out.println("hello" + 10 + 20); 				//hello1020(because left to right)
+		System.out.println(10 + 20 + "hello");				//30hello
+		
+		//split()
+		String s = "abc efg hij jkl mno";
+		String[] parts = s.split(" ");
+		for(int i = 0; i < parts.length; i++) {
+			System.out.println(parts[i]);
+		}
+		
 	}
 }
