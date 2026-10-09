@@ -49,12 +49,22 @@ public class Main {
 		System.out.println(s.substring(3, 2));		//Exception
 		
 	*/
-		//sari sustrings print krni hai 
-		String s = "abcd";
-		for(int i = 0; i < s.length(); i++) {
-			for(int j = i + 1; j <= s.length(); j++) {
-				System.out.println(s.substring(i, j));
-			}
-		}
+	/*
+	 * //sari sustrings print krni hai 
+	 * String s = "abcd";
+	 *  for(int i = 0; i < s.length(); i++) 
+	 *  { 
+	 *  for(int j = i + 1; j <= s.length(); j++) 
+	 *  {
+	 * System.out.println(s.substring(i, j)); 
+	 *  }
+	 * }
+	 */
+		
+	//do String add kaise hoti hai
+		String s1 = "hello";
+		String s2 = "world";
+		String s3 = s1 + " " + s2;
+		System.out.println(s3);
 	}
 }
