@@ -50,7 +50,7 @@ public class Introduction {
 		
 	*/
 	/*
-	 * //sari sustrings print krni hai 
+	 * //sari substrings print krni hai 
 	 * String s = "abcd";
 	 *  for(int i = 0; i < s.length(); i++) 
 	 *  { 
