@@ -9,7 +9,14 @@ public class Main {
 		//String s1 = "hello";
 		//System.out.println(s1);
 		
-		String s1 = sc.next();
+		/*
+		String s1 = sc.next();				//abc
+		String s2 = sc.next();				//def
+		System.out.println(s1);
+		System.out.println(s2);
+		*/
+		
+		String s1 = sc.nextLine();
 		String s2 = sc.next();
 		System.out.println(s1);
 		System.out.println(s2);
