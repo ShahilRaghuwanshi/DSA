@@ -25,6 +25,13 @@ public class Main {
 		
 		//length()
 		String s1 = sc.nextLine();
+		System.out.println(s1);
 		System.out.println(s1.length());
+		
+		//char
+		for(int i = 0; i < s1.length(); i++) {
+			char ch = s1.charAt(i);
+			System.out.println(ch);
+		}
 	}
 }
