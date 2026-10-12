@@ -22,10 +22,9 @@ public class FirstIndexOfOccurrence {
 			return idx;
 		}
 		firstIndexOfOccurrence(arr, idx + 1, x);
-		if(arr[idx] == x) {
+		if(arr[idx] != x) {
 			return idx;
-		}else {
-			return -1; 
 		}
+		return idx;
 	}
 }
