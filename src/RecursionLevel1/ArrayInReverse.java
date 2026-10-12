@@ -16,11 +16,11 @@ public class ArrayInReverse {
 	}
 	
 	public static void displayArrInReverse(int[] arr, int n) {
-		if(n == 0) {
-			System.out.println(arr[0]);
+		if(n == arr.length) {
 			return;
 		}
 		displayArrInReverse(arr, n + 1);
+		
 		System.out.println(arr[n]);
 	}
 }
