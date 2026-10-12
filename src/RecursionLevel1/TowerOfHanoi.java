@@ -7,21 +7,21 @@ public class TowerOfHanoi {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int t1 = sc.nextInt();
-		int t2 = sc.nextInt();
-		int t3 = sc.nextInt();
+		int t1d = sc.nextInt();
+		int t2d = sc.nextInt();
+		int t3d = sc.nextInt();
 		
-		towerOfHanoi(n, t1, t2, t3);
+		towerOfHanoi(n, t1d, t2d, t3d);
 	}
 	
-	public static void towerOfHanoi(int n, int t1, int t2, int t3) {
+	public static void towerOfHanoi(int n, int t1id, int t2id, int t3id) {
 		if(n == 0) return;
 		
-		towerOfHanoi(n - 1, t1, t3, t2);
+		towerOfHanoi(n - 1, t1id, t3id, t2id);
 		
-		System.out.println(n + "[" + t1 + " -> " + t2 + "]");
+		System.out.println(n + "[" + t1id + " -> " + t2id + "]");
 		
-		towerOfHanoi(n - 1, t3, t2, t1);
+		towerOfHanoi(n - 1, t3id, t2id, t1id);
 		
 	}
 }
