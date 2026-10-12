@@ -23,7 +23,9 @@ public class FirstIndexOfOccurrence {
 		}
 		if(arr[idx] == x) {
 			return idx;
+		}else {
+		int fiisa = firstIndexOfOccurrence(arr, idx + 1, x);
+		return fiisa;
 		}
-		return firstIndexOfOccurrence(arr, idx + 1, x);
 	}
 }
