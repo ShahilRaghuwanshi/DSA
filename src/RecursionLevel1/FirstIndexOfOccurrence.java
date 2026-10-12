@@ -13,18 +13,17 @@ public class FirstIndexOfOccurrence {
 			arr[i] = sc.nextInt();
 		}
 		int x = sc.nextInt();
-		int m = firstIndexOfOccurrence(arr, 0, x);
-		System.out.println(m);
+		int fi = firstIndexOfOccurrence(arr, 0, x);
+		System.out.println(fi);
 	}
 	
 	public static int firstIndexOfOccurrence(int[] arr, int idx, int x) {
-		if(idx == arr.length - 1) {
+		if(idx == arr.length) {
+			return -1;
+		}
+		if(arr[idx] == x) {
 			return idx;
 		}
-		firstIndexOfOccurrence(arr, idx + 1, x);
-		if(arr[idx] != x) {
-			return idx;
-		}
-		return idx;
+		return firstIndexOfOccurrence(arr, idx + 1, x);
 	}
 }
