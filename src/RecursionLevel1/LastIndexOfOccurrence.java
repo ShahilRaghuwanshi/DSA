@@ -14,20 +14,24 @@ public class LastIndexOfOccurrence {
 			arr[i] = sc.nextInt();
 		}
 		int x = sc.nextInt();
-		int l = lIOA(arr, 0, x);
-		System.out.println(l);
+		 arrLength(arr, 0, x);
+
 	}
 	
+	public static void arrLength(int[] arr, int idx, int x) {
+		int l = lIOA(arr, arr.length - 1, x);
+		System.out.println(l);
+	}
 	public static int lIOA(int[] arr, int idx, int x) {
-		int l = arr.length - 1;
-		if(l == 0) {
+		
+		if(idx <  0) {
 			return -1;
 		}
 		
-		int li = lIOA(arr, l - 1, x);
-		if(arr[l] == x) {
-			return l;
+		if(arr[idx] == x) {
+			return idx;
 		}else {
+			int li = lIOA(arr, idx - 1, x);
 			return li;
 		}
 	}
