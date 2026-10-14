@@ -2,7 +2,7 @@ package RecursionLevel1;
 
 import java.util.Scanner;
 
-public class LastIndexOfOccurrence {
+public class LastIndexOfOccurrence1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
