@@ -33,7 +33,7 @@ public class GetStairsPath {
 		for(String path : paths2) {
 			paths.add(2 + path);
 		}
-		for(String path : paths1) {
+		for(String path : paths3) {
 			paths.add(3 + path);
 		}
 		return paths;
