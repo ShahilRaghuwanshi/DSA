@@ -36,7 +36,7 @@ public class GetMazePathsWithJump {
 		}
 		for(int ms = 1; ms <= dc - sc &&  ms <= dc - sc; ms++) {
 			ArrayList<String> dpaths = gatMezePaths(sr + ms, sc + ms, dr, dc);
-			for(String path: dpaths) {
+			for(String dpath: dpaths) {
 				paths.add("h" + ms + dpath);
 			}
 		}
