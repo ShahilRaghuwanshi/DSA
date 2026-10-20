@@ -10,31 +10,43 @@ public class GetMazePathsWithJump {
 		int n = sc.nextInt();
 		int m = sc.nextInt();
 		
-		ArrayList<String> paths = gatMezePaths(1, 1, n, m);
+		ArrayList<String> paths = getMazePaths(1, 1, n, m);
 		System.out.println(paths);
 	}
 	
-	public static ArrayList<String> gatMezePaths(int sr, int sc, int dr, int dc) {
+	public static ArrayList<String> getMazePaths(int sr, int sc, int dr, int dc) {
 		if(sr == dr && sc == dc) {
 			ArrayList<String> bres = new ArrayList<>();
 			bres.add("");
 			return bres;
 		}
-		ArrayList<String> hpaths = new ArrayList<>();
-		ArrayList<String> vpaths = new ArrayList<>();
 		
-		if(sc < dc) {
-			hpaths = gatMezePaths(sr, sc + 1, dr, dc);
-		}else if(sr < dr) {
-			vpaths = gatMezePaths(sr + 1, sc, dr, dc);
-		}
 		ArrayList<String> paths = new ArrayList<>();
-		for(String hpath: hpaths) {
-			paths.add("h"+ hpath);
+		
+		// Horizontal moves
+		for(int ms = 1; ms <= dc - sc; ms++) {
+			ArrayList<String> hpaths = getMazePaths(sr, sc + ms, dr, dc);
+			for(String hpath: hpaths) {
+				paths.add("h" + ms + hpath);
+			}
 		}
-		for(String vpath : vpaths) {
-			paths.add("v" + vpath);
+		
+		// Vertical moves
+		for(int ms = 1; ms <= dr - sr; ms++) {
+			ArrayList<String> vpaths = getMazePaths(sr + ms, sc, dr, dc);
+			for(String vpath: vpaths) {
+				paths.add("v" + ms + vpath); // Fixed: changed "h" to "v"
+			}
 		}
+		
+		// Diagonal moves
+		for(int ms = 1; ms <= dr - sr && ms <= dc - sc; ms++) { // Fixed: checks both dr and dc bounds
+			ArrayList<String> dpaths = getMazePaths(sr + ms, sc + ms, dr, dc);
+			for(String dpath: dpaths) {
+				paths.add("d" + ms + dpath); // Fixed: changed "h" to "d"
+			}
+		}
+		
 		return paths;
 	}
-	}
+}
