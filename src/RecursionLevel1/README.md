@@ -1,4 +1,4 @@
-# 🚀 Pepcoding Level-1 Recursion & Backtracking: Official Problem Set
+# 🚀 Level-1 Recursion & Backtracking: Official Problem Set
 
 Welcome to the comprehensive repository of **Pepcoding Level-1 Recursion and Backtracking** problems. This README serves as a complete problem bank featuring problem descriptions, explicit input/output formats, sample test cases with explanations, constraints, and technical interview theory questions as asked in technical assessment rounds.
 
