@@ -1,4 +1,4 @@
-# 🚀 Pepcoding Recursion & Backtracking Level-1: Master Sheet
+# Recursion & Backtracking Level-1: Master Sheet
 
 A complete collection of Recursion and Backtracking problems designed to build deep mental models of recursion tree execution, stack mechanics, state management, and backtracking space-pruning.
 
