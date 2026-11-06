@@ -14,7 +14,7 @@ public class PrintStairPaths {
 	}
 	
 	public static void printStairPaths(int n, String path) {
-		if(n > 0) {
+		if(n < 0) {
 			return;
 		}
 		if(n == 0) {
