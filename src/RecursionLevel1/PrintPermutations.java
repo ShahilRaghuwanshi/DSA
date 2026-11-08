@@ -10,6 +10,12 @@ public class PrintPermutations {
 	}
 	
 	public static void printPermutations(String ques, String asf) {
+		
+		if(ques.length() == 0) {
+			System.out.println(asf);
+			return;
+		}
+		
 		for(int i = 0; i < ques.length(); i++) {
 			
 			char ch = ques.charAt(i);
